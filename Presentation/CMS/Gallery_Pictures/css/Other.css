@@ -1,0 +1,10 @@
+﻿body {
+}
+.Footer_Footer
+{
+	background-image:url('../images/Footer_.gif');
+	background-repeat:repeat-x;
+	width:125px;
+	height:29px;
+	text-align: center;
+}

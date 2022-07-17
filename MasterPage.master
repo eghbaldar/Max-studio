@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>S t u d i o   M A X</title>
+    <link href="Content/CSS/css_FF.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]> <link href="Content/CSS/css_6.css" rel="stylesheet" type="text/css" /> <![endif]-->
+</head>
+<body>
+    <div id="body">
+        <div id="header">
+            <div id="MenuBar">
+                <div id="Home">
+                    <a href="Entered.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif;
+                        font-size: 13px; text-decoration: none;">Home</a></div>
+                <img src="Content/Images/Design/split.gif" id="imgS" />
+                <div id="Gallery">
+                    <a href="Gallery.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif;
+                        font-size: 13px; text-decoration: none;">Gallery</a></div>
+                <img src="Content/Images/Design/split.gif" id="imgS" />
+                <div id="MusicVideo">
+                    <a href="Music_video.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif; font-size: 13px;
+                        text-decoration: none;">Music Video</a></div>
+                <img src="Content/Images/Design/split.gif" id="imgS" />
+                <div id="History">
+                    <a href="History.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif; font-size: 13px;
+                        text-decoration: none;">History</a></div>
+                <img src="Content/Images/Design/split.gif" id="imgS" />
+                <div id="Offers">
+                    <a href="Offer.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif; font-size: 13px;
+                        text-decoration: none;">Offers</a></div>
+                <img src="Content/Images/Design/split.gif" id="imgS" />
+                <div id="About">
+                    <a href="About.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif; font-size: 13px;
+                        text-decoration: none;">About</a></div>
+                <img src="Content/Images/Design/split.gif" id="imgS" />
+                <div id="Contact">
+                    <a href="Contact.aspx" class="link_" style="font-family: Tahoma, Geneva, sans-serif; font-size: 13px;
+                        text-decoration: none;">Contact</a></div>
+            </div>
+            <div id="Flash">
+                <object width="550" height="400">
+                    <param name="movie" value="content\flash\Headers.swf">
+                    <embed src="content\flash\Headers.swf" width="918" height="194">
+                  </embed>
+                </object>
+            </div>
+        </div>
+        <div id="center">
+            <form id="form1" runat="server">
+            <div>
+                <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            </form>
+        </div>
+        <div id="footer" ">
+            <span id="textFooter">Powered By <a target="_blank" style="text-decoration: none;
+                color: #666;" href="http://www.caspianTeam.com">CaspianTeam.com</a> © 2011-2012</span>
+        </div>
+    </div>
+</body>
+</html>
